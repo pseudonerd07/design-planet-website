@@ -7,8 +7,9 @@ const HeroSection = () => {
       <div className='max-w-7xl mx-auto px-6 md:px-10 md:py-20 grid grid-cols-1 md:grid-cols-2 items-center  '>
         {/* Text Content */}
         <div className='flex flex-col justify-evenly items-center w-full p-2 md:col-span-1'>
-          <h1 className='text-2xl sm:text-6xl md:text-6xl font-extrabold leading-snug md:leading-[1.1] '>
-            Your One-stop <br /> solution for <br />
+          <h1 className='text-2xl sm:text-6xl md:text-6xl font-extrabold leading-snug md:leading-[1.1] text-wrap'>
+            Your <span className=' text-wrap text-blue-300'>One-stop</span>{" "}
+            <br /> solution for <br />
             custom prints and <br />
             school accessories
           </h1>
