@@ -26,7 +26,11 @@ const HeroSection = () => {
 
         {/* Hero Image */}
         <div className='md:col-span-1'>
-          <img src={heroImage} alt='Printing Illustration' className=' ' />
+          <img
+            src={heroImage}
+            alt='Printing Illustration'
+            className='float-animation'
+          />
         </div>
       </div>
     </section>
