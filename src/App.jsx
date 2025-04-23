@@ -6,6 +6,9 @@ import HeroSection from "./components/HeroSection";
 import Productcard from "./components/Productcard";
 import product from "./assets/dp_hero.png";
 import ProductsGrid from "./components/ProductsGrid";
+import FooterSection from "./components/FooterSection";
+import Testimonials from "./components/TestimonialCard";
+import TestimonialGrid from "./components/TestimonialGrid";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +18,9 @@ function App() {
       <HeroSection />
 
       <ProductsGrid />
+      <TestimonialGrid />
+
+      <FooterSection />
     </div>
   );
 }
