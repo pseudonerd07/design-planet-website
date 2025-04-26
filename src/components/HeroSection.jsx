@@ -8,7 +8,10 @@ const HeroSection = () => {
         {/* Text Content */}
         <div className='flex flex-col justify-evenly items-center w-full p-2 md:col-span-1'>
           <h1 className='text-2xl sm:text-6xl md:text-6xl font-extrabold leading-snug md:leading-[1.1] text-wrap'>
-            Your <span className=' text-wrap text-blue-300'>One-stop</span>{" "}
+            Your{" "}
+            <span className=' text-wrap bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-200 bg-clip-text inline-block text-transparent'>
+              One-stop
+            </span>{" "}
             <br /> solution for <br />
             custom prints and <br />
             school accessories
