@@ -20,7 +20,7 @@ const HeroSection = () => {
             school accessories
           </h1>
 
-          <div className='mt-4 md:flex pl-5 md:pl-0 md:justify-start md:items-center pb-8 w-full md:mb-5'>
+          <div className='mt-4 md:flex pl-5 md:pl-5 md:justify-start md:items-center pb-8 w-full md:mb-5'>
             <a href='#products'>
               <button className='bg-blue-400 font-semibold py-2 px-7 text-center mt-5 w-full md:w-auto mx-0 rounded-sm md:rounded-3xl hover:bg-blue-500 active:bg-blue-600 hover:cursor-pointer transition-all md:mr-10 shadow-2xl hover:scale-110'>
                 Products
