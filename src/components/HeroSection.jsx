@@ -1,5 +1,5 @@
 import React from "react";
-import heroImage from "../assets/dp_hero.png"; // <-- update path as needed
+import heroImage from "../assets/dp_hero.png";
 
 const HeroSection = () => {
   return (
@@ -9,7 +9,7 @@ const HeroSection = () => {
         <div className='flex flex-col justify-evenly items-center w-full p-2 md:col-span-1'>
           <h1 className='text-2xl sm:text-6xl md:text-6xl font-extrabold leading-snug md:leading-[1.1] text-wrap'>
             Your{" "}
-            <span className=' text-wrap bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-200 bg-clip-text inline-block text-transparent'>
+            <span className=' text-wrap bg-gradient-to-r from-blue-300 via-blue-400 to-violet-500 bg-clip-text inline-block text-transparent'>
               One-stop
             </span>{" "}
             <br /> solution for <br />
@@ -17,11 +17,11 @@ const HeroSection = () => {
             school accessories
           </h1>
 
-          <div className='mt-4 md:flex  md:justify-items-start md:items-center p-2 w-full'>
-            <button className='bg-blue-400 font-semibold py-2 px-7 text-center mt-5 w-full md:w-auto mx-0 rounded-sm md:rounded-4xl hover:bg-blue-500 hover:cursor-pointer transition-all mr-10 shadow-2xl hover:scale-110'>
+          <div className='mt-4 md:flex pl-5  md:justify-items-start md:items-center pb-8 w-full md:mb-5'>
+            <button className='bg-blue-400 font-semibold py-2 px-7 text-center mt-5 w-full md:w-auto mx-0 rounded-sm md:rounded-4xl hover:bg-blue-500 active:bg-blue-600    hover:cursor-pointer transition-all  mr-10 shadow-2xl hover:scale-110'>
               Products
             </button>
-            <button className='border border-blue-400 font-semibold text-white text-center mt-5 w-full md:w-auto mx-0 rounded-sm py-2 px-7 md:rounded-4xl hover:scale-110 hover:cursor-pointer transition-all duration-300 mr-10 shadow-2xl animate-pulse hover:animate-none'>
+            <button className='border border-blue-400 font-semibold text-white text-center mt-5 w-full active:bg-blue-500  md:w-auto mx-0 rounded-sm py-2 px-7 md:rounded-4xl hover:scale-110 hover:cursor-pointer transition-all duration-100 mr-10 shadow-2xl animate-pulse hover:animate-none'>
               Contact Us
             </button>
           </div>
