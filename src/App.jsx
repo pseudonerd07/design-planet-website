@@ -11,22 +11,17 @@ import Testimonials from "./components/TestimonialCard";
 import TestimonialGrid from "./components/TestimonialGrid";
 import Navbar from "./components/Navbar";
 import { Routes, Route, Link } from "react-router-dom";
+import BaseLayout from "./components/BaseLayout";
+import NotFound from "./components/NotFound";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div>
-      <Navbar />
-      <br />
-      <br />
-      <HeroSection />
-      <ProductsGrid />
-      <TestimonialGrid />
-      <FooterSection />
       <Routes>
-        {/* dummy route */}
-        <Route path='/*' element={<></>} />
+        <Route path='/' element={<BaseLayout />} />
+        <Route path='/*' element={<NotFound />} />
       </Routes>
     </div>
   );
