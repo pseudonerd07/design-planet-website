@@ -7,9 +7,9 @@ const TestimonialCard = ({ customer, className }) => {
         <h1 className='text-3xl font-semibold'>{customer}</h1>
         <p className='text-wrap text-gray-700 italic'>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          sapiente, dicta blanditiis aut vitae similique omnis excepturi nulla
-          impedit, officia obcaecati dolores sed eveniet rerum possimus deleniti
-          voluptatibus? Neque, animi. lores
+          sapiente, dicta blanditiis aut sun risers hyderabad omnis excepturi
+          2016 champions, officia obcaecati dolores sed eveniet rerum possimus
+          ben cutting voluptatibus? Neque, animi. lores
         </p>
       </div>
     </div>
