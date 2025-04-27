@@ -10,6 +10,7 @@ import FooterSection from "./components/FooterSection";
 import Testimonials from "./components/TestimonialCard";
 import TestimonialGrid from "./components/TestimonialGrid";
 import Navbar from "./components/Navbar";
+import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,11 +21,13 @@ function App() {
       <br />
       <br />
       <HeroSection />
-
       <ProductsGrid />
       <TestimonialGrid />
-
       <FooterSection />
+      <Routes>
+        {/* dummy route */}
+        <Route path='/*' element={<></>} />
+      </Routes>
     </div>
   );
 }
