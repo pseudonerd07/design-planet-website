@@ -17,6 +17,8 @@ function App() {
   return (
     <div>
       <Navbar />
+      <br />
+      <br />
       <HeroSection />
 
       <ProductsGrid />
