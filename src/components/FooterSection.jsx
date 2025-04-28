@@ -1,7 +1,25 @@
 import React from "react";
 import logo from "../assets/dlogo.png";
-
+import { useNavigate, useLocation } from "react-router-dom";
 const FooterSection = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const goContactUs = () => {
+    navigate("/contact");
+  };
+
+  const goHome = () => {
+    if (location.pathname === "/") {
+      window.scrollTo(0, 0);
+    } else {
+      navigate("/");
+    }
+  };
+
+  const goProducts = () => {
+    navigate("/products");
+  };
+
   return (
     <div className='w-full bg-gradient-to-r from-gray-900 via-gray-700 to-gray-950 text-white'>
       <div className='grid max-w-7xl m-auto grid-cols-1 md:grid-cols-3    gap-8 px-8 py-12 md:px-20 md:py-20'>
@@ -16,16 +34,13 @@ const FooterSection = () => {
         </div>
 
         <div className='flex flex-col md:items-center gap-2'>
-          <a href='#' className='text-gray-200 hover:underline'>
+          <a onClick={goHome} className='text-gray-200 hover:underline'>
             Home
           </a>
-          <a href='#products' className='text-gray-200 hover:underline'>
+          <a onClick={goProducts} className='text-gray-200 hover:underline'>
             Products
           </a>
-          <a href='#testimonials' className='text-gray-200 hover:underline'>
-            Testimonial
-          </a>
-          <a href='#' className='text-gray-200 hover:underline'>
+          <a onClick={goContactUs} className='text-gray-200 hover:underline'>
             Address
           </a>
         </div>
@@ -36,9 +51,8 @@ const FooterSection = () => {
           <a href='#' className='text-gray-200 hover:underline'>
             Terms of Service
           </a>
-          <p>Contact Us</p>
-          <a href='#' className='text-gray-200 hover:underline'>
-            8309-343720/7569-442818
+          <a href='#' onClick={goContactUs}>
+            Contact Us
           </a>
         </div>
       </div>

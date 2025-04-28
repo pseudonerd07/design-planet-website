@@ -13,6 +13,8 @@ import Navbar from "./components/Navbar";
 import { Routes, Route, Link } from "react-router-dom";
 import BaseLayout from "./components/BaseLayout";
 import NotFound from "./components/NotFound";
+import Contact from "./components/Contact";
+import ProductsPage from "./components/ProductsPage";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,6 +23,8 @@ function App() {
     <div>
       <Routes>
         <Route path='/' element={<BaseLayout />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/products' element={<ProductsPage />} />
         <Route path='/*' element={<NotFound />} />
       </Routes>
     </div>

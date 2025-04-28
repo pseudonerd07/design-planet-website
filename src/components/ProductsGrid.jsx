@@ -1,14 +1,15 @@
 import React from "react";
 import Productcard from "./Productcard"; // adjust path if needed
 import product from "../assets/dp_hero.png";
+import Navbar from "./Navbar";
+import FooterSection from "./FooterSection";
 
 const ProductsGrid = () => {
   return (
     <>
-      <h1
-        id='products'
-        className='text-7xl my-10 text-center font-semibold text-gray-800 '
-      >
+      <Navbar />
+      <div id='emptyspace' className='h-20'></div>
+      <h1 className='text-7xl my-10 text-center font-semibold text-gray-800 '>
         Products
       </h1>
       <section className='max-w-7xl mx-auto px-5 py-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5'>

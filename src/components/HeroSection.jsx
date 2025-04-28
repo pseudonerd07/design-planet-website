@@ -1,7 +1,18 @@
 import React from "react";
 import heroImage from "../assets/dp_hero.png";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const goProducts = () => {
+    navigate("/products");
+  };
+
+  const goContactUs = () => {
+    navigate("/contact");
+  };
   return (
     <section
       id='home'
@@ -21,12 +32,17 @@ const HeroSection = () => {
           </h1>
 
           <div className='mt-4 md:flex pl-5 md:pl-5 md:justify-start md:items-center pb-8 w-full md:mb-5'>
-            <a href='#products'>
-              <button className='bg-blue-400 font-semibold py-2 px-7 text-center mt-5 w-full md:w-auto mx-0 rounded-sm md:rounded-3xl hover:bg-blue-500 active:bg-blue-600 hover:cursor-pointer transition-all md:mr-10 shadow-2xl hover:scale-110'>
-                Products
-              </button>
-            </a>
-            <button className='border border-blue-400 font-semibold text-white text-center mt-5 w-full md:w-auto mx-0 rounded-sm py-2 px-7 md:rounded-3xl hover:scale-110 hover:cursor-pointer transition-all duration-100 md:mr-10 shadow-2xl animate-pulse hover:animate-none'>
+            <button
+              onClick={goProducts}
+              className='bg-blue-400 font-semibold py-2 px-7 text-center mt-5 w-full md:w-auto mx-0 rounded-sm md:rounded-3xl hover:bg-blue-500 active:bg-blue-600 hover:cursor-pointer transition-all md:mr-10 shadow-2xl hover:scale-110'
+            >
+              Products
+            </button>
+
+            <button
+              onClick={goContactUs}
+              className='border border-blue-400 font-semibold text-white text-center mt-5 w-full md:w-auto mx-0 rounded-sm py-2 px-7 md:rounded-3xl hover:scale-110 hover:cursor-pointer transition-all duration-100 md:mr-10 shadow-2xl animate-pulse hover:animate-none'
+            >
               Contact Us
             </button>
           </div>
