@@ -41,7 +41,7 @@ const HeroSection = () => {
 
             <button
               onClick={goContactUs}
-              className='border border-blue-400 font-semibold text-white text-center mt-5 w-full md:w-auto mx-0 rounded-sm py-2 px-7 md:rounded-3xl hover:scale-110 hover:cursor-pointer transition-all duration-100 md:mr-10 shadow-2xl animate-pulse hover:animate-none'
+              className='border border-blue-400 font-semibold active:bg-blue-600 text-white text-center mt-5 w-full md:w-auto mx-0 rounded-sm py-2 px-7 md:rounded-3xl hover:scale-110 hover:cursor-pointer transition-all duration-100 md:mr-10 shadow-2xl animate-pulse hover:animate-none'
             >
               Contact Us
             </button>
