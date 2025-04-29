@@ -15,12 +15,14 @@ import BaseLayout from "./components/BaseLayout";
 import NotFound from "./components/NotFound";
 import Contact from "./components/Contact";
 import ProductsPage from "./components/ProductsPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div>
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<BaseLayout />} />
         <Route path='/contact' element={<Contact />} />
