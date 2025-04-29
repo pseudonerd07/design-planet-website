@@ -54,25 +54,35 @@ const Navbar = () => {
         <div className='hidden md:flex space-x-8 text-lg font-medium'>
           <a
             onClick={goHome}
-            className='hover:text-blue-400 transition-colors duration-300 hover:cursor-pointer'
+            className={`hover:text-blue-400  ${
+              location.pathname !== "/" ? "text-white" : "text-green-300"
+            } transition-colors duration-300 hover:cursor-pointer`}
           >
             Home
           </a>
           <a
             onClick={goProducts}
-            className='hover:text-blue-400 transition-colors duration-300 hover:cursor-pointer'
+            className={`hover:text-blue-400  ${
+              location.pathname !== "/products"
+                ? "text-white"
+                : "text-green-300"
+            } transition-colors duration-300 hover:cursor-pointer`}
           >
             Products
           </a>
           <a
             href='#about'
-            className='hover:text-blue-400 transition-colors duration-300 hover:cursor-pointer'
+            className={`hover:text-blue-400  ${
+              location.pathname !== "/about" ? "text-white" : "text-green-300"
+            } transition-colors duration-300 hover:cursor-pointer`}
           >
             About
           </a>
           <a
             onClick={goContactUs}
-            className='hover:text-blue-400 transition-colors duration-300 hover:cursor-pointer'
+            className={`hover:text-blue-400  ${
+              location.pathname !== "/contact" ? "text-white" : "text-green-300"
+            } transition-colors duration-300 hover:cursor-pointer`}
           >
             Contact
           </a>
