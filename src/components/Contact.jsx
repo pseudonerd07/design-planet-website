@@ -20,9 +20,9 @@ const Contact = () => {
           <div className='flex flex-col col-span-4 bg-white rounded-4xl h-full'>
             <div className='p-10'>
               <div className=''>
-                <div className='flex flex-row justify-start items-center '>
+                <div className='flex flex-row justify-start hover:scale-105 transition-all duration-200 items-center '>
                   <FaMapLocationDot className='text-gray-950 size-6 md:size-10 mx-4 my-2 ' />
-                  <h1 className='text-md md:text-2xl font-semibold text-gray-950 md:hover:text-3xl transition-all duration-300'>
+                  <h1 className='text-md md:text-2xl font-semibold text-gray-950  transition-all duration-300'>
                     Location
                   </h1>
                 </div>
@@ -32,9 +32,9 @@ const Contact = () => {
                 </p>
               </div>
               <div className='text-wrap'>
-                <div className='flex flex-row justify-start items-center '>
+                <div className='flex flex-row justify-start hover:scale-105 transition-all duration-200 items-center '>
                   <AiOutlinePhone className='text-gray-950 size-6 md:size-10  mx-3 my-2 hover:text-3xl transition-all duration-300' />
-                  <h1 className='text-md md:text-2xl font-semibold text-gray-950 md:hover:text-3xl transition-all duration-300'>
+                  <h1 className='text-md md:text-2xl font-semibold text-gray-950  transition-all duration-300'>
                     Phone Number
                   </h1>
                 </div>
@@ -45,9 +45,9 @@ const Contact = () => {
                 </ul>
               </div>
               <div className='text-wrap'>
-                <div className='flex flex-row justify-start items-center '>
+                <div className='flex flex-row justify-start hover:scale-105 transition-all duration-200 items-center '>
                   <TfiEmail className='text-gray-950 size-6 md:size-10 mx-4 my-2 ' />
-                  <h1 className='text-md md:text-2xl font-semibold text-gray-950 md:hover:text-3xl transition-all duration-300'>
+                  <h1 className='text-md md:text-2xl font-semibold text-gray-950  transition-all duration-300'>
                     Email
                   </h1>
                 </div>
