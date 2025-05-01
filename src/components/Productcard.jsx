@@ -3,7 +3,7 @@ import React from "react";
 const Productcard = ({ image, name, price, description, className = "" }) => {
   return (
     <div
-      className={`bg-gray-100   border rounded-2xl shadow-md hover:shadow-2xl hover:scale-125 transform transition-all duration-500 ease-in-out 
+      className={`bg-gray-100  border rounded-2xl shadow-md hover:shadow-2xl hover:scale-105 transform transition-all duration-300 ease-in-out 
         hover:-translate-y-2 ${className} border-blue-300 mt-2 opacity-85  hover:opacity-100 hover:cursor-pointer`}
     >
       <div className='p-4'>

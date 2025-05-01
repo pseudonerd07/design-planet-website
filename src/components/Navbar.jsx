@@ -55,7 +55,9 @@ const Navbar = () => {
           <a
             onClick={goHome}
             className={`hover:text-blue-400  ${
-              location.pathname !== "/" ? "text-white" : "text-green-300"
+              location.pathname !== "/"
+                ? "text-white"
+                : "border-b-2 border-b-white text-green-300"
             } transition-colors duration-300 hover:cursor-pointer`}
           >
             Home
