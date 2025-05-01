@@ -55,9 +55,7 @@ const Navbar = () => {
           <a
             onClick={goHome}
             className={`hover:text-blue-400  ${
-              location.pathname !== "/"
-                ? "text-white"
-                : "border-b-2 border-b-white text-green-300"
+              location.pathname !== "/" ? "text-white" : " text-blue-300"
             } transition-colors duration-300 hover:cursor-pointer`}
           >
             Home
@@ -65,9 +63,7 @@ const Navbar = () => {
           <a
             onClick={goProducts}
             className={`hover:text-blue-400  ${
-              location.pathname !== "/products"
-                ? "text-white"
-                : "text-green-300"
+              location.pathname !== "/products" ? "text-white" : "text-blue-300"
             } transition-colors duration-300 hover:cursor-pointer`}
           >
             Products
@@ -75,7 +71,7 @@ const Navbar = () => {
           <a
             href='#about'
             className={`hover:text-blue-400  ${
-              location.pathname !== "/about" ? "text-white" : "text-green-300"
+              location.pathname !== "/about" ? "text-white" : "text-blue-300"
             } transition-colors duration-300 hover:cursor-pointer`}
           >
             About
@@ -83,7 +79,7 @@ const Navbar = () => {
           <a
             onClick={goContactUs}
             className={`hover:text-blue-400  ${
-              location.pathname !== "/contact" ? "text-white" : "text-green-300"
+              location.pathname !== "/contact" ? "text-white" : "text-blue-300"
             } transition-colors duration-300 hover:cursor-pointer`}
           >
             Contact
