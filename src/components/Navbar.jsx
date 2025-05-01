@@ -91,7 +91,7 @@ const Navbar = () => {
             className='text-3xl text-white focus:outline-none transition-transform duration-300 transform hover:scale-110'
             onClick={toggleMenu}
           >
-            {isMenuOpen ? <IoCloseCircleOutline /> : "☰"}
+            {isMenuOpen ? <IoCloseCircleOutline className='mt-2.5' /> : "☰"}
           </button>
         </div>
       </div>
