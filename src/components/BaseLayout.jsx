@@ -6,6 +6,7 @@ import TestimonialGrid from "./TestimonialGrid";
 import TestimonialCard from "./TestimonialCard";
 import FooterSection from "./FooterSection";
 import Navbar from "./Navbar";
+import FrequentlyAQ from "./FrequentlyAQ";
 const BaseLayout = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ const BaseLayout = () => {
       <HeroSection />
       <ProductsGrid />
       <TestimonialGrid />
+      <FrequentlyAQ />
       <FooterSection />
     </div>
   );
